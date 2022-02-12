@@ -1,0 +1,17 @@
+.container {
+  max-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.topBarBg {
+  background: var(--light);
+}
+.scrollContainer {
+  position: relative;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100%;
+}

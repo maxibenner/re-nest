@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-small);
+  background: #f4f7fa;
+  border-radius: var(--border-radius-reg);
+  color: var(--font-main);
+}
+.text {
+  margin: 0;
+  user-select: none;
+}
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Overlay */
+.priorityOverlay {
+  right: 60px;
+  border-radius: 15px;
+  position: absolute;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding-left: var(--padding-small);
+}
+.priorityOverlay > div {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-reg);
+  color: var(--light);
+  font-size: 0.8rem;
+  padding: 10px var(--padding-small);
+}
+.priorityOverlay > div:nth-child(1) {
+  background-color: var(--red);
+}
+.priorityOverlay > div:nth-child(2) {
+  background-color: var(--green);
+}
+.priorityOverlay > div:nth-child(3) {
+  background-color: var(--blue);
+}

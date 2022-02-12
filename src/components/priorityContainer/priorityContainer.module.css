@@ -1,0 +1,12 @@
+.container {
+  padding: var(--padding-base);
+}
+.head {
+  margin: 0 15px;
+  margin-bottom: var(--padding-base);
+}
+.elementContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

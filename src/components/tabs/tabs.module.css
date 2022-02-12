@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: space-around;
+  flex-shrink: 0;
+  border-bottom: 2px solid var(--color_bg_light);
+}
+.tab {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: var(--light);
+  padding: 0 5px;
+  border-bottom: 2px solid transparent;
+  color: var(--font-dark);
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 30%;
+  transition: 0.5s;
+}
+.active {
+  opacity: 100%;
+  border-bottom: 2px solid var(--font-dark);
+}

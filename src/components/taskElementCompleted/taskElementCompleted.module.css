@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: transparent;
+  border-bottom: 1px solid hsla(0, 0%, 59%, 0.3);
+  color: var(--font-main);
+}
+.text {
+  opacity: 0.2;
+  margin: 0;
+  user-select: none;
+  text-decoration: line-through;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  height: 30px;
+  width: 30px;
+  border: 2px solid rgb(234, 234, 243);
+  border-radius: 100%;
+  margin: var(--padding-base);
+  cursor: pointer;
+  background: rgb(234, 234, 243);
+  color: black;
+}

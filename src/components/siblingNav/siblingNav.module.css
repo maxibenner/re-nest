@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-small);
+}
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--font-light);
+  width: 32px;
+  cursor: pointer;
+}
+.head {
+  color: var(--font-main);
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+}

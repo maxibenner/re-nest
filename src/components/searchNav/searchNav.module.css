@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-small) var(--padding-small);
+  border-bottom: 2px solid var(--color_bg_light);
+}
+
+.cancelButton {
+  cursor: pointer;
+  color: var(--font-main);
+}

@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--light);
+  height: 100vh;
+  max-height: 700px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px black;
+}

@@ -1,0 +1,22 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--light);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-base) var(--padding-small);
+  gap: 25px;
+  overflow: scroll;
+  height: 100%;
+  background: var(--color_bg_light);
+}
+

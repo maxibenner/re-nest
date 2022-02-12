@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { PhoneWrapper } from "./components/phoneWrapper/PhoneWrapper";
+import { TodoWrapper } from "./contexts/todoContext";
+import { AddTodoPage } from "./pages/addTodoPage/AddTodoPage";
+import { MainPage } from "./pages/mainPage/MainPage";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { SearchPage } from "./pages/searchPage/SearchPage";
 
 function App() {
+  const [page, setPage] = useState<"mainPage" | "addTodoPage" | "searchPage">(
+    "mainPage"
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodoWrapper>
+      <PhoneWrapper>
+        <MainPage
+          onNav={() => setPage("addTodoPage")}
+          onSearch={() => setPage("searchPage")}
+        />
+        <AnimatePresence>
+          {page === "searchPage" && (
+            <SearchPage key="search" onCancel={() => setPage("mainPage")} />
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {page === "addTodoPage" && (
+            <AddTodoPage key="add" onNav={() => setPage("mainPage")} />
+          )}
+        </AnimatePresence>
+      </PhoneWrapper>
+    </TodoWrapper>
   );
 }
 
